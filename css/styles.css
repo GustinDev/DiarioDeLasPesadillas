@@ -20,8 +20,7 @@ body {
 }
 
 .container {
-  max-width: 1030px;
-  /* width: 100%; */
+  width: 100%;
   margin: 0 auto;
   justify-content: inherit;
   align-items: inherit;
@@ -57,7 +56,6 @@ button {
   padding-right: 20px;
   color: white;
   padding-left: 10px;
-  z-index: 10 !important;
   padding-bottom: 10px;
 }
 .navbar li a {
@@ -102,18 +100,25 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 1500px;
-  margin-top: 80px;
+  width: auto;
+  margin-top: 5%;
 }
 
 .main_section h1 {
   color: white;
   background-color: #f66747;
-  margin: 5% auto;
+  margin: 7% auto;
   border-radius: 20px;
   letter-spacing: 1px;
   text-shadow: 8px 8px 8px #ae3217;
   font-size: 70px;
+}
+
+@media (max-width: 770px) {
+  .main_section h1 {
+    margin-top: 10%;
+    font-size: 40px;
+  }
 }
 
 .main_section img {
@@ -121,31 +126,31 @@ button {
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 20px;
-  box-shadow: 0 0 10px #e3d4ff;
+  box-shadow: 0 0 10px #ffebd4;
   position: relative;
   z-index: 2;
 }
 
-.main_button {
+/* .main_button {
   height: 60px;
   width: 240px;
   margin: 0 auto;
   border-radius: 10px;
   color: white;
   text-decoration: none;
-  background-color: #885bf3;
+  background-color: #f66747;
   margin-top: -80px;
   font-size: 45px;
   cursor: pointer;
-  text-shadow: 2px 2px 2px #310d7b;
+  text-shadow: 2px 2px 2px #f66747;
   padding-bottom: 5px;
   position: relative;
   z-index: 3;
-}
+} */
 
-.main_button:hover {
+/* .main_button:hover {
   background-color: #773cf1;
-}
+} */
 
 .background_main_section {
   background-image: url('../images/Componente\ 1\ –\ 1.svg');
@@ -158,6 +163,12 @@ button {
 
 /* Products */
 
+@media (max-width: 481px) {
+  .products {
+    margin-top: 25%;
+  }
+}
+
 .products {
   display: flex;
   border: 1px solid inherit;
@@ -166,19 +177,21 @@ button {
   text-align: center;
   justify-items: center;
   justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .product {
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .name_product {
   display: flex;
   letter-spacing: 2px;
   color: white;
-  border: 1px solid #ff9f52;
-  background-color: #ff9f52;
+  background-color: #f66747;
   border-radius: 30px;
   height: 100px;
   width: 300px;
@@ -190,10 +203,17 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .name_product h2 {
   font-size: 40px;
   margin: 0px auto;
   padding: 20px 90px;
+  color: white;
+  background-color: #f66747;
+  text-shadow: 5px 8px 8px #af381d;
+  width: 300px;
+  text-align: center;
+  border-radius: 30px;
 }
 
 .name_product a {
@@ -202,20 +222,26 @@ button {
 }
 
 .name_product:hover {
-  background-color: #f66747;
+  background-color: #af381d;
+  text-shadow: 5px 8px 8px #af381d;
+  cursor: pointer;
+}
+
+.name_product h2:hover {
+  background-color: #af381d;
   text-shadow: 5px 8px 8px #af381d;
   cursor: pointer;
 }
 
 .product img {
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   border-radius: 50%;
   object-fit: cover;
   margin-top: -100px;
 }
 
-.price_product h2 {
+/* .price_product h2 {
   height: 40px;
   width: 160px;
   margin: auto;
@@ -227,7 +253,8 @@ button {
   margin-top: -50px;
   position: relative;
   letter-spacing: 1px;
-}
+} */
+
 /* Products CSS+*/
 
 .message {
@@ -255,6 +282,7 @@ button {
 /* Footer */
 
 .contact {
+  padding-top: 10px;
   background-color: #00a08f;
   color: white;
   height: 120px;
@@ -262,6 +290,7 @@ button {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .social {
@@ -344,6 +373,7 @@ button {
 }
 
 .footer {
+  width: 100%;
   margin: 0px;
   background-color: #03355a;
   display: flex;
@@ -394,10 +424,6 @@ button {
   align-items: center;
 }
 
-.row {
-  margin-top: 100px;
-}
-
 .modulo_pago {
   margin: 10px 1px;
   background-color: #ff9f52;
@@ -409,7 +435,7 @@ button {
   color: white;
   text-shadow: 4px 4px 4px #c54022;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 20px;
 }
 
@@ -498,23 +524,10 @@ button {
   text-shadow: 8px 8px 8px #ae3217;
   position: relative;
   z-index: 3;
-  font-size: 50px;
+  font-size: 43px;
   width: 90%;
   margin-top: 150px;
   margin-bottom: 100px;
-}
-
-.h1-container-VID2 h1 {
-  color: white;
-  background-color: #f66747;
-  margin: 0 auto;
-  border-radius: 20px;
-  letter-spacing: 1px;
-  text-shadow: 8px 8px 8px #ae3217;
-  position: relative;
-  z-index: 3;
-  font-size: 50px;
-  width: 90%;
 }
 
 .contenedorvideo {
@@ -522,19 +535,20 @@ button {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
+  width: 90%;
+  padding-bottom: 56%;
   height: 0;
+  margin: auto;
 }
 
 .contenedorvideo iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   height: 90%;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .enlaceYT {
@@ -542,7 +556,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 95px;
   text-decoration: none;
 }
 
@@ -550,8 +564,8 @@ button {
   padding-top: 10px;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 500px;
+  height: 70px;
+  width: 34%;
   margin: auto;
   color: white;
   background-color: #ff9946;
@@ -561,6 +575,7 @@ button {
   position: relative;
   letter-spacing: 1px;
   text-align: center;
+  margin-bottom: 110px;
 }
 
 .enlacedeYT {
@@ -576,115 +591,34 @@ button {
 
 /* DIBUJOS*/
 
-.members {
-  margin-bottom: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
+.cards {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
-.container_dibujos {
-  padding-top: 25px;
+.card {
+  margin: 10px;
+  background-color: #ff9f52;
 }
 
-.members {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  flex-wrap: wrap;
-}
-
-.members_text {
-  position: relative;
-  border: 1px solid #f66747;
-  height: 450px;
-  width: 450px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #f66747;
-  color: white;
-  text-shadow: 4px 4px 4px #da4726;
-}
-
-.members_text h2 {
-  font-size: 80px;
-  margin: 20px 10px;
-  align-self: auto;
-  text-align: center;
-}
-
-.members_text h3 {
+.card-body h2 {
   font-size: 40px;
-  margin: 10px 10px;
-  align-self: auto;
-  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #d14728;
 }
 
-.parrafo h3 {
-  letter-spacing: 10;
+@media (max-width: 400px) {
+  .card {
+    width: 15rem !important;
+  }
 }
 
-/* IMAGE ORIGINAL */
-
-.members_image {
-  border: 1px solid #f66747;
-  background-image: url(../images/Pasteleros2.jpg);
-  height: 450px;
-  width: 510px;
-  background-size: cover;
-}
-
-.members_image img {
-  object-fit: cover;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
-/* IMAGES OTRAS */
-
-.members_image_Pablo {
-  border: 1px solid #f66747;
-  background-image: url(../images/Ilustraciones/Pablo.png);
-  height: 450px;
-  width: 510px;
-  background-size: cover;
-}
-
-.members_image_Abuelo {
-  border: 1px solid #f66747;
-  background-image: url(../images/Ilustraciones/Abuelo.png);
-  height: 450px;
-  width: 510px;
-  background-size: cover;
-}
-
-.members_image_Abuela {
-  border: 1px solid #f66747;
-  background-image: url(../images/Ilustraciones/Abuela.png);
-  height: 450px;
-  width: 510px;
-  background-size: cover;
-}
-
-.members_image_Mounstro {
-  border: 1px solid #f66747;
-  background-image: url(../images/Ilustraciones/Mounstro.png);
-  height: 450px;
-  width: 510px;
-  background-size: cover;
-}
-
-.members_image_Cap {
-  border: 1px solid #f66747;
-  background-image: url(../images/Ilustraciones/Cap.png);
-  height: 450px;
-  width: 510px;
-  background-size: cover;
+.html {
+  width: 100%;
 }
 
 /* CUENTOS */
+
 .container-video-cuento {
   margin-top: 100px;
 }
@@ -692,7 +626,8 @@ button {
 .player {
   margin-top: 30px;
   position: relative;
-  width: 500px;
+  width: 300px;
+  height: 150px;
   background: #ff9f52;
   box-shadow: 5px 5px 5px #d5782c;
   border-radius: 10px;
@@ -700,6 +635,12 @@ button {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .imgBx h2 {
@@ -722,6 +663,7 @@ button {
 }
 
 .player audio {
+  margin-top: 40px;
   width: 100%;
   outline: none;
 }
@@ -748,16 +690,56 @@ button {
   position: relative;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cuentotexto2 iframe {
+.cuentotexto2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.cuentotexto iframe {
   position: relative;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 800px;
   height: 700px;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.h1-container-VID2 h1 {
+  color: white;
+  background-color: #f66747;
+  margin: 20px auto;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-shadow: 8px 8px 8px #ae3217;
+  position: relative;
+  z-index: 3;
+  font-size: 50px;
+  width: 90%;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .h1-container-VID2 h1 {
+    font-size: 30px;
+    width: 60%;
+  }
+  .cuentotexto2 iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 400px;
+  }
 }
