@@ -1,0 +1,202 @@
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 768px) {
+    .main_section{
+        padding: 0px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    /* NAV */
+    nav{
+        margin-bottom: 50px;
+    }
+    /* MAIN-HERO */
+    .main_section{
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .figure{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .main_section h1{
+        margin-top: -550px;
+        padding: 0px;
+        height: 40px;
+        width: 370px;
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+    .main_section img{
+        width: 400px;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 20px;
+    }
+    .main_button{
+        text-align: center;
+        height: 40px;
+        width: 170px;
+        margin: 0 auto;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: #885bf3;
+        margin-top: -55px;
+        font-size: 30px;
+        cursor: pointer;
+        text-shadow: 2px 2px 2px #310d7b;
+        padding-bottom: 5px;
+    }
+    .background_main_section{
+        background-image: url("../images/Componente\ 1\ –\ 1.svg");
+        height: 600px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover; 
+        margin-top: -550px;
+    }
+    /* PRODUCTS */
+    .product{
+        margin-top: 120px;
+    }
+    .name_product{
+        letter-spacing: 1px;
+        color: white;
+        border: 1px solid #A79AFF;
+        background-color: #A79AFF;
+        border-radius: 30px;
+        height: 50px;
+        width: 300px;
+        text-shadow: 2px 2px 2px #773cf1;
+        position: relative;
+        top: -60px;
+    }
+    .name_product h2{
+        text-align: center;
+        margin: 0;
+        font-size: 31px;
+    }
+    .price_product h2{
+        margin: -40px auto 0;
+    }
+    .product figure{
+        margin: 0;
+}
+/* FOOTER */
+.contact{
+    display: block;
+    height: auto;
+    text-align: center;
+}
+.form-email button{
+    margin: 15px auto;
+    font-size: 20px;
+}
+.social a{  
+    margin: 0 20px;
+}
+}
+@media screen and (max-width: 320px) {
+    nav{
+        margin-bottom: 30px;
+    }
+    /* MAIN-HERO */
+    .main_section{
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        }
+        .figure{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        .main_section h1{
+            margin-top: -350px;
+            padding: 0px;
+            height: 30px;
+            width: 300px;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        .main_section img{
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border-radius: 20px;
+        }
+        .main_button{
+            text-align: center;
+            height: 30px;
+            width: 170px;
+            margin: 0 auto;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            background-color: #885bf3;
+            margin-top: -35px;
+            font-size: 25px;
+            cursor: pointer;
+            text-shadow: 2px 2px 2px #310d7b;
+            padding-bottom: 5px;
+        }
+        .background_main_section{
+            object-position: 0px;
+        }
+    /* PRODUCTS */
+    .product{
+        margin-top: 60px;
+    }
+    .product img{
+        height: 290px;
+        width: 290px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: -100px;
+    }
+    .name_product{
+        height: 60px;
+        width: 220px;
+        margin-bottom:10px ;
+        position: relative;
+        text-shadow: 2px 2px 2px #773cf1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name_product h2{
+        margin: 0;
+        align-items: center;
+        font-size: 25px;
+    }
+    .price_product h2{
+        height: 40px;
+        width: 160px;
+        margin: auto;
+        color: white;
+        background-color: #885bf3;
+        text-shadow: 2px 2px 2px #310d7b;
+        letter-spacing: 1px;
+        align-items: center;
+        margin-top: -50px;
+        position: relative;
+        letter-spacing: 1px;
+    }
+}
